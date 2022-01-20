@@ -12,7 +12,6 @@ import java.nio.file.attribute.FileTime;
 import org.apache.commons.io.FileUtils;
 import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.fs.FileSystem;
-import org.apache.hadoop.fs.Path;
 
 public abstract class FSUtils {
   private static FSUtils currentFS;
@@ -111,7 +110,7 @@ public abstract class FSUtils {
       boolean retValue = false;
       try {
         FileSystem fs = FileSystem.get(conf);
-        retValue = fs.exists(new Path(path));
+        retValue = fs.exists(new org.apache.hadoop.fs.Path(path));
       } catch (IOException e) {
         e.printStackTrace();
         throw new RuntimeException(e);
@@ -126,7 +125,7 @@ public abstract class FSUtils {
       boolean retValue = false;
       try {
         FileSystem fs = FileSystem.get(conf);
-        retValue = fs.delete(new Path(path), true);
+        retValue = fs.delete(new org.apache.hadoop.fs.Path(path), true);
       } catch (IOException e) {
         e.printStackTrace();
         throw new RuntimeException(e);
@@ -145,7 +144,7 @@ public abstract class FSUtils {
       boolean retValue = false;
       try {
         FileSystem fs = FileSystem.get(conf);
-        retValue = fs.createNewFile(new Path(path));
+        retValue = fs.createNewFile(new org.apache.hadoop.fs.Path(path));
       } catch (IOException e) {
         e.printStackTrace();
         throw new RuntimeException(e);

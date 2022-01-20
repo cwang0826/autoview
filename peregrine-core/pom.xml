@@ -50,18 +50,6 @@
     </dependency>
 
     <dependency>
-      <groupId>com.microsoft.azure</groupId>
-      <artifactId>azure-data-lake-store-sdk</artifactId>
-      <version>2.3.1</version>
-    </dependency>
-
-    <dependency>
-      <groupId>com.microsoft.sqlserver</groupId>
-      <artifactId>mssql-jdbc</artifactId>
-      <version>6.4.0.jre8</version>
-    </dependency>
-
-    <dependency>
       <groupId>org.apache.spark</groupId>
       <artifactId>spark-sql_2.11</artifactId>
       <version>2.4.0</version>

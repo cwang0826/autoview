@@ -4,7 +4,6 @@ import com.microsoft.peregrine.core.signatures.Signature;
 import com.microsoft.peregrine.core.signatures.hash.SignHash64;
 import java.util.Iterator;
 import java.util.List;
-import java.util.Set;
 import org.apache.spark.sql.catalyst.catalog.CatalogTable;
 import org.apache.spark.sql.catalyst.expressions.AttributeReference;
 import org.apache.spark.sql.catalyst.expressions.Expression;
@@ -17,7 +16,6 @@ import scala.Function0;
 import scala.Option;
 import scala.collection.JavaConverters;
 import scala.collection.Seq;
-import scala.collection.Set;
 import scala.collection.immutable.Map;
 import scala.collection.immutable.Set;
 import scala.runtime.AbstractFunction0;
@@ -89,7 +87,7 @@ public abstract class LogicalPlanSignature implements Signature<LogicalPlan> {
       return listSig;
     } 
     if (Set.class.isAssignableFrom(arg.getClass())) {
-      Set<Object> javaSet = (Set<Object>)JavaConverters.setAsJavaSetConverter((Set)arg).asJava();
+      java.util.Set<Object> javaSet = (java.util.Set<Object>)JavaConverters.setAsJavaSetConverter((Set)arg).asJava();
       String setSig = null;
       for (Object element : javaSet)
         setSig = SignHash64.Compute(setSig, getArgSignature(element)); 

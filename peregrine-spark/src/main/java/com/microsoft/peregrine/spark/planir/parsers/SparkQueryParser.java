@@ -18,6 +18,7 @@ import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import java.util.Iterator;
 
 public class SparkQueryParser extends QueryParser<JSONObject> {
   private static final Logger logger = LoggerFactory.getLogger(SparkQueryParser.class);
@@ -168,7 +169,9 @@ public class SparkQueryParser extends QueryParser<JSONObject> {
       .contains("Scan") && planInfoNodeName.contains("Scan")) || (op.name
       .contains("CommandExec") && planInfoNodeName.contains("Execute") && planInfoNodeName
       .contains("Command"))) {
-      for (Object o : planInfo.get("metrics")) {
+      Iterator var4 = ((JSONArray)planInfo.get("metrics")).iterator();
+      while(var4.hasNext()) {
+	Object o = var4.next();
         Metric metric = new SparkMetric((JSONObject)o);
         op.addMetric(metric);
       } 

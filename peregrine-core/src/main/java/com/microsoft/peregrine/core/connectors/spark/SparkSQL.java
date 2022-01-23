@@ -94,6 +94,7 @@ public class SparkSQL {
           } else {
             System.out.println("Unknown field type: " + fieldCls.getName());
             b++;
+	    continue;
           } 
           schema = schema.add(name, type, true);
         } 

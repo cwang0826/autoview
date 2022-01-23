@@ -8,7 +8,7 @@ public class LexicalEquivalence {
   
   public LexicalEquivalence() {
     if (equivalent == null) {
-      equivalent = (Multimap<String, String>)HashMultimap.create();
+      equivalent = HashMultimap.create();
       init();
     } 
   }

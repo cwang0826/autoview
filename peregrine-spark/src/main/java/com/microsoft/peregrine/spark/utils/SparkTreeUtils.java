@@ -62,8 +62,8 @@ public class SparkTreeUtils {
     preorderList.add(root);
     int numChildren = root.numChildren;
     if (numChildren >= 1)
-      preOrder(root.children.get(0), preorderList); 
+      preOrder((SparkOpJson)root.children.get(0), preorderList); 
     if (numChildren == 2)
-      preOrder(root.children.get(1), preorderList); 
+      preOrder((SparkOpJson)root.children.get(1), preorderList); 
   }
 }

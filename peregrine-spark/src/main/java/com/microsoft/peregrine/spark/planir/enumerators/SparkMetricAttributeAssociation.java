@@ -14,8 +14,8 @@ public class SparkMetricAttributeAssociation implements MetricAttributeAssociati
   
   public SparkMetricAttributeAssociation() {
     if (attrToMetrics == null || metricToAttrs == null) {
-      attrToMetrics = (Multimap<String, String>)HashMultimap.create();
-      metricToAttrs = (Multimap<String, String>)HashMultimap.create();
+      attrToMetrics = HashMultimap.create();
+      metricToAttrs = HashMultimap.create();
       initializeMaps();
       addPropagatedMetrics();
     } 

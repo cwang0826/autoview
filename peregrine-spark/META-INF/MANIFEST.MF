@@ -1,7 +1,7 @@
 Manifest-Version: 1.0
 Archiver-Version: Plexus Archiver
 Built-By: hdiuser
-Class-Path: dependency-jars/peregrine-core-0.4-SNAPSHOT.jar dependency
+Class-Path: dependency-jars/cloudviews-core-0.4-SNAPSHOT.jar dependency
  -jars/commons-lang3-3.8.1.jar dependency-jars/azure-data-lake-store-s
  dk-2.3.1.jar dependency-jars/jackson-core-2.7.4.jar dependency-jars/m
  ssql-jdbc-6.4.0.jre8.jar dependency-jars/spark-sql_2.11-2.4.0.jar dep
@@ -107,5 +107,5 @@ Class-Path: dependency-jars/peregrine-core-0.4-SNAPSHOT.jar dependency
  25.jar dependency-jars/scala-library-2.11.12.jar
 Created-By: Apache Maven 3.3.9
 Build-Jdk: 1.8.0_181
-Main-Class: com.microsoft.peregrine.spark.utils.SparkTaskRunner
+Main-Class: com.huawei.cloudviews.spark.utils.SparkTaskRunner
 

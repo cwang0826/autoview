@@ -1,7 +1,7 @@
-package com.microsoft.peregrine.core.tasks;
+package com.huawei.cloudviews.core.tasks;
 
-import com.microsoft.peregrine.core.config.PropertyConfiguration;
-import com.microsoft.peregrine.core.planir.preprocess.data.ir.FileIR;
+import com.huawei.cloudviews.core.config.PropertyConfiguration;
+import com.huawei.cloudviews.core.planir.preprocess.data.ir.FileIR;
 
 public class TaskRunner {
   private int paramIdx = 0;

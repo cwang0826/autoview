@@ -1,4 +1,4 @@
-package com.microsoft.peregrine.core.planir.preprocess.data.ir;
+package com.huawei.cloudviews.core.planir.preprocess.data.ir;
 
 public interface IR {
   Object query(String paramString);

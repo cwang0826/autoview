@@ -1,7 +1,7 @@
-package com.microsoft.peregrine.core.planir.parsers;
+package com.huawei.cloudviews.core.planir.parsers;
 
-import com.microsoft.peregrine.core.planir.parsers.entities.Metric;
-import com.microsoft.peregrine.core.planir.parsers.entities.Query;
+import com.huawei.cloudviews.core.planir.parsers.entities.Metric;
+import com.huawei.cloudviews.core.planir.parsers.entities.Query;
 import org.apache.log4j.Logger;
 
 public abstract class QueryParser<Input> implements IParser<Input, Query> {

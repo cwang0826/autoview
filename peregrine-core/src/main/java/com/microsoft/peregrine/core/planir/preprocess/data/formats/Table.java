@@ -1,6 +1,6 @@
-package com.microsoft.peregrine.core.planir.preprocess.data.formats;
+package com.huawei.cloudviews.core.planir.preprocess.data.formats;
 
-import com.microsoft.peregrine.core.connectors.jdbc.Database;
+import com.huawei.cloudviews.core.connectors.jdbc.Database;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 

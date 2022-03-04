@@ -1,6 +1,6 @@
-package com.microsoft.peregrine.spark.planir.parsers.entities;
+package com.huawei.cloudviews.spark.planir.parsers.entities;
 
-import com.microsoft.peregrine.core.planir.parsers.entities.Metric;
+import com.huawei.cloudviews.core.planir.parsers.entities.Metric;
 import org.json.simple.JSONObject;
 
 public class SparkAccumulable extends Metric {

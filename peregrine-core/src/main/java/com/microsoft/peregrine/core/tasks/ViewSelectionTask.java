@@ -1,15 +1,15 @@
-package com.microsoft.peregrine.core.tasks;
+package com.huawei.cloudviews.core.tasks;
 
-import com.microsoft.peregrine.core.config.legacy.Config;
-import com.microsoft.peregrine.core.connectors.spark.SparkSQL;
-import com.microsoft.peregrine.core.feedback.AbstractFeedback;
-import com.microsoft.peregrine.core.feedback.FeedbackFile;
-import com.microsoft.peregrine.core.feedback.IFeedback;
-import com.microsoft.peregrine.core.feedback.annotations.Annotation;
-import com.microsoft.peregrine.core.optimizations.multiquery.viewselection.DataFrameWeightedHeuristicsViewSelection;
-import com.microsoft.peregrine.core.planir.preprocess.data.ir.DataFrameIR;
-import com.microsoft.peregrine.core.planir.preprocess.data.ir.FileIR;
-import com.microsoft.peregrine.core.planir.preprocess.data.ir.IR;
+import com.huawei.cloudviews.core.config.legacy.Config;
+import com.huawei.cloudviews.core.connectors.spark.SparkSQL;
+import com.huawei.cloudviews.core.feedback.AbstractFeedback;
+import com.huawei.cloudviews.core.feedback.FeedbackFile;
+import com.huawei.cloudviews.core.feedback.IFeedback;
+import com.huawei.cloudviews.core.feedback.annotations.Annotation;
+import com.huawei.cloudviews.core.optimizations.multiquery.viewselection.DataFrameWeightedHeuristicsViewSelection;
+import com.huawei.cloudviews.core.planir.preprocess.data.ir.DataFrameIR;
+import com.huawei.cloudviews.core.planir.preprocess.data.ir.FileIR;
+import com.huawei.cloudviews.core.planir.preprocess.data.ir.IR;
 import java.util.List;
 
 public class ViewSelectionTask implements FileBasedTask {

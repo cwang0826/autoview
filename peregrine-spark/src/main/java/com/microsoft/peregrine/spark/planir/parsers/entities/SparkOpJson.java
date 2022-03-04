@@ -1,6 +1,6 @@
-package com.microsoft.peregrine.spark.planir.parsers.entities;
+package com.huawei.cloudviews.spark.planir.parsers.entities;
 
-import com.microsoft.peregrine.core.planir.parsers.entities.Operator;
+import com.huawei.cloudviews.core.planir.parsers.entities.Operator;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 import org.json.simple.JSONObject;

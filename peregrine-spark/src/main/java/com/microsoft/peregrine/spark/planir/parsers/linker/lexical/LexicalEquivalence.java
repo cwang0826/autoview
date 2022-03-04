@@ -1,4 +1,4 @@
-package com.microsoft.peregrine.spark.planir.parsers.linker.lexical;
+package com.huawei.cloudviews.spark.planir.parsers.linker.lexical;
 
 import com.google.common.collect.HashMultimap;
 import com.google.common.collect.Multimap;

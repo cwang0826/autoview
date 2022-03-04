@@ -1,4 +1,4 @@
-package com.microsoft.peregrine.core.features;
+package com.huawei.cloudviews.core.features;
 
 import org.apache.spark.mllib.linalg.Vector;
 

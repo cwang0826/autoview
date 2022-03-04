@@ -1,7 +1,7 @@
-package com.microsoft.peregrine.core.planir.preprocess.data.formats;
+package com.huawei.cloudviews.core.planir.preprocess.data.formats;
 
-import com.microsoft.peregrine.core.planir.preprocess.entities.View;
-import com.microsoft.peregrine.core.planir.preprocess.enumerators.IEnumerator;
+import com.huawei.cloudviews.core.planir.preprocess.entities.View;
+import com.huawei.cloudviews.core.planir.preprocess.enumerators.IEnumerator;
 import java.io.BufferedWriter;
 import java.io.FileWriter;
 import java.io.IOException;

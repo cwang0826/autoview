@@ -1,7 +1,7 @@
-package com.microsoft.peregrine.core.planir.preprocess.data.formats;
+package com.huawei.cloudviews.core.planir.preprocess.data.formats;
 
-import com.microsoft.peregrine.core.connectors.spark.SparkSQL;
-import com.microsoft.peregrine.core.planir.preprocess.entities.View;
+import com.huawei.cloudviews.core.connectors.spark.SparkSQL;
+import com.huawei.cloudviews.core.planir.preprocess.entities.View;
 import org.apache.spark.sql.Dataset;
 import org.apache.spark.sql.Row;
 

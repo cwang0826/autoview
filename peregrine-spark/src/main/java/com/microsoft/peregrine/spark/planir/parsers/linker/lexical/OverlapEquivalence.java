@@ -1,4 +1,4 @@
-package com.microsoft.peregrine.spark.planir.parsers.linker.lexical;
+package com.huawei.cloudviews.spark.planir.parsers.linker.lexical;
 
 public class OverlapEquivalence {
   public double getOverlapSimilarityScore(String op1, String op2) {

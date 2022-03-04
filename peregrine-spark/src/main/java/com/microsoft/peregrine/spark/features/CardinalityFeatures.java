@@ -1,6 +1,6 @@
-package com.microsoft.peregrine.spark.features;
+package com.huawei.cloudviews.spark.features;
 
-import com.microsoft.peregrine.core.features.IFeatures;
+import com.huawei.cloudviews.core.features.IFeatures;
 import java.util.ArrayList;
 import java.util.List;
 import org.apache.spark.mllib.linalg.Vector;

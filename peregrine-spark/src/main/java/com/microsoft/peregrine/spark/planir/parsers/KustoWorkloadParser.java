@@ -1,11 +1,11 @@
-package com.microsoft.peregrine.spark.planir.parsers;
+package com.huawei.cloudviews.spark.planir.parsers;
 
-import com.microsoft.peregrine.core.planir.parsers.FileParser;
-import com.microsoft.peregrine.core.planir.parsers.entities.Application;
-import com.microsoft.peregrine.core.planir.parsers.entities.Metadata;
-import com.microsoft.peregrine.core.planir.parsers.entities.Metric;
-import com.microsoft.peregrine.core.planir.parsers.entities.Query;
-import com.microsoft.peregrine.core.planir.parsers.entities.Workload;
+import com.huawei.cloudviews.core.planir.parsers.FileParser;
+import com.huawei.cloudviews.core.planir.parsers.entities.Application;
+import com.huawei.cloudviews.core.planir.parsers.entities.Metadata;
+import com.huawei.cloudviews.core.planir.parsers.entities.Metric;
+import com.huawei.cloudviews.core.planir.parsers.entities.Query;
+import com.huawei.cloudviews.core.planir.parsers.entities.Workload;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.util.ArrayList;

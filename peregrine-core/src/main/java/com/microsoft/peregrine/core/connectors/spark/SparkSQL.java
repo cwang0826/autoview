@@ -1,6 +1,6 @@
-package com.microsoft.peregrine.core.connectors.spark;
+package com.huawei.cloudviews.core.connectors.spark;
 
-import com.microsoft.peregrine.core.connectors.jdbc.Database;
+import com.huawei.cloudviews.core.connectors.jdbc.Database;
 import java.lang.reflect.Field;
 import java.lang.reflect.Modifier;
 import java.util.ArrayList;

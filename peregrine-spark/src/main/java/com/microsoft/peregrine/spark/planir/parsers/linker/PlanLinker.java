@@ -1,7 +1,7 @@
-package com.microsoft.peregrine.spark.planir.parsers.linker;
+package com.huawei.cloudviews.spark.planir.parsers.linker;
 
-import com.microsoft.peregrine.core.planir.parsers.entities.Operator;
-import com.microsoft.peregrine.spark.planir.parsers.linker.lexical.LexicalSimilarity;
+import com.huawei.cloudviews.core.planir.parsers.entities.Operator;
+import com.huawei.cloudviews.spark.planir.parsers.linker.lexical.LexicalSimilarity;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.List;

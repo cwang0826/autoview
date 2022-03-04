@@ -1,6 +1,6 @@
-package com.microsoft.peregrine.spark.planir.parsers;
+package com.huawei.cloudviews.spark.planir.parsers;
 
-import com.microsoft.peregrine.core.planir.preprocess.entities.View;
+import com.huawei.cloudviews.core.planir.preprocess.entities.View;
 import org.json.simple.JSONObject;
 
 public class LogicalNodeAnnotations {

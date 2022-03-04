@@ -1,9 +1,9 @@
-package com.microsoft.peregrine.spark.planir.parsers.metricflow;
+package com.huawei.cloudviews.spark.planir.parsers.metricflow;
 
-import com.microsoft.peregrine.core.planir.parsers.entities.Metric;
-import com.microsoft.peregrine.core.planir.parsers.entities.Operator;
-import com.microsoft.peregrine.core.planir.preprocess.entities.View;
-import com.microsoft.peregrine.spark.planir.enumerators.SparkMetricAttributeAssociation;
+import com.huawei.cloudviews.core.planir.parsers.entities.Metric;
+import com.huawei.cloudviews.core.planir.parsers.entities.Operator;
+import com.huawei.cloudviews.core.planir.preprocess.entities.View;
+import com.huawei.cloudviews.spark.planir.enumerators.SparkMetricAttributeAssociation;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;

@@ -1,4 +1,4 @@
-package com.microsoft.peregrine.core.planir.parsers;
+package com.huawei.cloudviews.core.planir.parsers;
 
 import java.io.BufferedReader;
 import java.io.IOException;

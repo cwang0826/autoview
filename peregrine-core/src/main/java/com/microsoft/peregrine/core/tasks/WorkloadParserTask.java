@@ -1,10 +1,10 @@
-package com.microsoft.peregrine.core.tasks;
+package com.huawei.cloudviews.core.tasks;
 
-import com.microsoft.peregrine.core.config.legacy.Config;
-import com.microsoft.peregrine.core.planir.parsers.entities.Workload;
-import com.microsoft.peregrine.core.planir.preprocess.data.ir.FileIR;
-import com.microsoft.peregrine.core.planir.preprocess.data.ir.IR;
-import com.microsoft.peregrine.core.planir.preprocess.enumerators.IEnumerator;
+import com.huawei.cloudviews.core.config.legacy.Config;
+import com.huawei.cloudviews.core.planir.parsers.entities.Workload;
+import com.huawei.cloudviews.core.planir.preprocess.data.ir.FileIR;
+import com.huawei.cloudviews.core.planir.preprocess.data.ir.IR;
+import com.huawei.cloudviews.core.planir.preprocess.enumerators.IEnumerator;
 
 public abstract class WorkloadParserTask implements FileBasedTask {
   public String getName() {

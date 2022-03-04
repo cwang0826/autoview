@@ -1,6 +1,6 @@
-package com.microsoft.peregrine.core.feedback.annotations;
+package com.huawei.cloudviews.core.feedback.annotations;
 
-import com.microsoft.peregrine.core.utils.FSUtils;
+import com.huawei.cloudviews.core.utils.FSUtils;
 import java.io.File;
 import java.nio.file.Paths;
 

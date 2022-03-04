@@ -1,6 +1,6 @@
-package com.microsoft.peregrine.spark.planir.parsers.linker.lexical;
+package com.huawei.cloudviews.spark.planir.parsers.linker.lexical;
 
-import com.microsoft.peregrine.core.planir.parsers.entities.Operator;
+import com.huawei.cloudviews.core.planir.parsers.entities.Operator;
 
 public class LexicalSimilarity {
   LexicalEquivalence le = new LexicalEquivalence();

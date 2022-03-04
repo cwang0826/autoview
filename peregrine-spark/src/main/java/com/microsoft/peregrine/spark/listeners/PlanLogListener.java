@@ -1,10 +1,10 @@
-package com.microsoft.peregrine.spark.listeners;
+package com.huawei.cloudviews.spark.listeners;
 
-import com.microsoft.peregrine.core.planir.preprocess.entities.View;
-import com.microsoft.peregrine.spark.extensions.rules.ComputationReuse;
-import com.microsoft.peregrine.spark.features.CardinalityFeatures;
-import com.microsoft.peregrine.spark.features.LogicalPlanFeaturize;
-import com.microsoft.peregrine.spark.signature.LogicalPlanSignature;
+import com.huawei.cloudviews.core.planir.preprocess.entities.View;
+import com.huawei.cloudviews.spark.extensions.rules.ComputationReuse;
+import com.huawei.cloudviews.spark.features.CardinalityFeatures;
+import com.huawei.cloudviews.spark.features.LogicalPlanFeaturize;
+import com.huawei.cloudviews.spark.signature.LogicalPlanSignature;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.atomic.AtomicLong;
@@ -48,7 +48,7 @@ public class PlanLogListener implements QueryExecutionListener {
   
   protected void postPlans(String planDescription, QueryExecution qe, long startTime, long planLogId) {
     SparkContext sc = qe.sparkSession().sparkContext();
-    PlanLogEvent startEvent = new PlanLogEvent(planLogId, "PeregrinePlanLogEvent", "Spark SQL Plans with annotations.", planDescription, SparkPlanInfo.fromSparkPlan(qe.executedPlan()), startTime);
+    PlanLogEvent startEvent = new PlanLogEvent(planLogId, "cloudviewsPlanLogEvent", "Spark SQL Plans with annotations.", planDescription, SparkPlanInfo.fromSparkPlan(qe.executedPlan()), startTime);
     sc.listenerBus().post((SparkListenerEvent)startEvent);
     SparkListenerSQLExecutionEnd endEvent = new SparkListenerSQLExecutionEnd(planLogId, System.currentTimeMillis());
     sc.listenerBus().post((SparkListenerEvent)endEvent);
@@ -80,7 +80,7 @@ public class PlanLogListener implements QueryExecutionListener {
     try {
       sb.append("== Optimized Logical Plan ==");
       sb.append(qe.optimizedPlan().prettyJson());
-      sb.append("== Peregrine Signature ==");
+      sb.append("== cloudviews Signature ==");
       List<String> signatures = getSignatures(qe.optimizedPlan());
       SparkContext context = qe.sparkSession().sparkContext();
       List<CardinalityFeatures> cardinalityFeatures = new ArrayList<>();

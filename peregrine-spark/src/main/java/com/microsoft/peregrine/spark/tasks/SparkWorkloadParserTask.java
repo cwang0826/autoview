@@ -1,11 +1,11 @@
-package com.microsoft.peregrine.spark.tasks;
+package com.huawei.cloudviews.spark.tasks;
 
-import com.microsoft.peregrine.core.config.legacy.Config;
-import com.microsoft.peregrine.core.planir.parsers.entities.Workload;
-import com.microsoft.peregrine.core.planir.preprocess.enumerators.IEnumerator;
-import com.microsoft.peregrine.core.tasks.WorkloadParserTask;
-import com.microsoft.peregrine.spark.planir.enumerators.SparkViewEnumerator;
-import com.microsoft.peregrine.spark.planir.parsers.SparkWorkloadParser;
+import com.huawei.cloudviews.core.config.legacy.Config;
+import com.huawei.cloudviews.core.planir.parsers.entities.Workload;
+import com.huawei.cloudviews.core.planir.preprocess.enumerators.IEnumerator;
+import com.huawei.cloudviews.core.tasks.WorkloadParserTask;
+import com.huawei.cloudviews.spark.planir.enumerators.SparkViewEnumerator;
+import com.huawei.cloudviews.spark.planir.parsers.SparkWorkloadParser;
 
 public class SparkWorkloadParserTask extends WorkloadParserTask {
   protected Workload getWorkload(Config conf) {

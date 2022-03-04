@@ -1,7 +1,7 @@
-package com.microsoft.peregrine.core.planir.preprocess.data.ir;
+package com.huawei.cloudviews.core.planir.preprocess.data.ir;
 
-import com.microsoft.peregrine.core.connectors.spark.SparkSQL;
-import com.microsoft.peregrine.core.planir.preprocess.data.formats.DataFrame;
+import com.huawei.cloudviews.core.connectors.spark.SparkSQL;
+import com.huawei.cloudviews.core.planir.preprocess.data.formats.DataFrame;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.List;

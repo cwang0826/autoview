@@ -1,4 +1,4 @@
-package com.microsoft.peregrine.core.planir.parsers.entities;
+package com.huawei.cloudviews.core.planir.parsers.entities;
 
 import org.apache.log4j.Logger;
 

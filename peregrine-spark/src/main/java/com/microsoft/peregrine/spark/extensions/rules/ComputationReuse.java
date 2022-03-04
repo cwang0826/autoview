@@ -1,9 +1,9 @@
-package com.microsoft.peregrine.spark.extensions.rules;
+package com.huawei.cloudviews.spark.extensions.rules;
 
-import com.microsoft.peregrine.core.feedback.annotations.Annotation;
-import com.microsoft.peregrine.core.feedback.annotations.AnnotationAction;
-import com.microsoft.peregrine.core.feedback.annotations.AnnotationType;
-import com.microsoft.peregrine.spark.signature.LogicalPlanSignature;
+import com.huawei.cloudviews.core.feedback.annotations.Annotation;
+import com.huawei.cloudviews.core.feedback.annotations.AnnotationAction;
+import com.huawei.cloudviews.core.feedback.annotations.AnnotationType;
+import com.huawei.cloudviews.spark.signature.LogicalPlanSignature;
 import java.util.ArrayList;
 import java.util.List;
 import org.apache.spark.rdd.RDD;

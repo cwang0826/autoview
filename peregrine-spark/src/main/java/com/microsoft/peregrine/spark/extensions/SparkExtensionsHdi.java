@@ -1,10 +1,10 @@
-package com.microsoft.peregrine.spark.extensions;
+package com.huawei.cloudviews.spark.extensions;
 
-import com.microsoft.peregrine.core.config.PropertyConfiguration;
-import com.microsoft.peregrine.core.config.legacy.Config;
+import com.huawei.cloudviews.core.config.PropertyConfiguration;
+import com.huawei.cloudviews.core.config.legacy.Config;
 
 public class SparkExtensionsHdi extends SparkExtensions {
   protected Config getConf() {
-    return (Config)new PropertyConfiguration("/opt/peregrine/analyze/peregrine-spark.properties");
+    return (Config)new PropertyConfiguration("/opt/cloudviews/analyze/cloudviews-spark.properties");
   }
 }

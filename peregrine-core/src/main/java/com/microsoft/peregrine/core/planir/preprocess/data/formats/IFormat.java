@@ -1,4 +1,4 @@
-package com.microsoft.peregrine.core.planir.preprocess.data.formats;
+package com.huawei.cloudviews.core.planir.preprocess.data.formats;
 
 public interface IFormat {
   String getName();

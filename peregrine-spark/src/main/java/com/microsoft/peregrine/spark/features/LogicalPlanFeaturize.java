@@ -1,4 +1,4 @@
-package com.microsoft.peregrine.spark.features;
+package com.huawei.cloudviews.spark.features;
 
 import java.util.List;
 import org.apache.spark.SparkContext;

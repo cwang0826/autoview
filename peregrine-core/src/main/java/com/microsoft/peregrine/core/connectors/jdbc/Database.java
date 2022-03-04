@@ -1,4 +1,4 @@
-package com.microsoft.peregrine.core.connectors.jdbc;
+package com.huawei.cloudviews.core.connectors.jdbc;
 
 import java.io.BufferedReader;
 import java.io.IOException;

@@ -1,11 +1,11 @@
-package com.microsoft.peregrine.spark.extensions.rules;
+package com.huawei.cloudviews.spark.extensions.rules;
 
-import com.microsoft.peregrine.core.connectors.spark.SparkSQL;
-import com.microsoft.peregrine.core.feedback.AbstractFeedback;
-import com.microsoft.peregrine.core.feedback.FeedbackFile;
-import com.microsoft.peregrine.core.feedback.IFeedback;
-import com.microsoft.peregrine.core.feedback.annotations.Annotation;
-import com.microsoft.peregrine.spark.signature.LogicalPlanSignature;
+import com.huawei.cloudviews.core.connectors.spark.SparkSQL;
+import com.huawei.cloudviews.core.feedback.AbstractFeedback;
+import com.huawei.cloudviews.core.feedback.FeedbackFile;
+import com.huawei.cloudviews.core.feedback.IFeedback;
+import com.huawei.cloudviews.core.feedback.annotations.Annotation;
+import com.huawei.cloudviews.spark.signature.LogicalPlanSignature;
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
@@ -31,15 +31,15 @@ public abstract class AbstractRule extends Rule<LogicalPlan> {
   
   protected static Set<String> processedSignatures = new HashSet<>();
   
-  private static String feedbackTypeKey = "peregrine.feedback.type";
+  private static String feedbackTypeKey = "cloudviews.feedback.type";
   
-  private static String feedbackParamsKey = "peregrine.feedback.params";
+  private static String feedbackParamsKey = "cloudviews.feedback.params";
   
-  protected static String feedbackLocationKey = "peregrine.feedback.location";
+  protected static String feedbackLocationKey = "cloudviews.feedback.location";
   
-  private static String feedbackRefreshFlag = "peregrine.feedback.refresh";
+  private static String feedbackRefreshFlag = "cloudviews.feedback.refresh";
   
-  protected static String materializeFormatKey = "peregrine.materialize.format";
+  protected static String materializeFormatKey = "cloudviews.materialize.format";
   
   protected static IFeedback feedbackLoader;
   
@@ -120,7 +120,7 @@ public abstract class AbstractRule extends Rule<LogicalPlan> {
         if (AbstractRule.this.signatureMatch(child)) {
           LogicalPlan modifiedChild = AbstractRule.this.modifySubPlan(child);
           modifiedChildren.add(modifiedChild);
-          AbstractRule.logger.info("[PeregrineRule] {} rule applied on HTS {}", AbstractRule.this.getRuleClassName(), LogicalPlanSignature.HTS(child));
+          AbstractRule.logger.info("[cloudviewsRule] {} rule applied on HTS {}", AbstractRule.this.getRuleClassName(), LogicalPlanSignature.HTS(child));
           continue;
         } 
         modifiedChildren.add(child);

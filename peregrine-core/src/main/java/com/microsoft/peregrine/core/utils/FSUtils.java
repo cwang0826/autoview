@@ -1,4 +1,4 @@
-package com.microsoft.peregrine.core.utils;
+package com.huawei.cloudviews.core.utils;
 
 import java.io.BufferedReader;
 import java.io.File;

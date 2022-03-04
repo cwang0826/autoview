@@ -1,4 +1,4 @@
-package com.microsoft.peregrine.core.planir.preprocess.entities;
+package com.huawei.cloudviews.core.planir.preprocess.entities;
 
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;

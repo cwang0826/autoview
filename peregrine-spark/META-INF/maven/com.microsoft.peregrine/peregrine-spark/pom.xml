@@ -2,7 +2,7 @@
 <!--
   ~ MIT License
   ~
-  ~ Copyright (c) 2019 Microsoft Corporation
+  ~ Copyright (c) 2019 huawei Corporation
   ~
   ~ Permission is hereby granted, free of charge, to any person obtaining a copy
   ~ of this software and associated documentation files (the "Software"), to deal
@@ -30,22 +30,22 @@
     <modelVersion>4.0.0</modelVersion>
   
   <parent>
-    <groupId>com.microsoft.peregrine</groupId>
-    <artifactId>peregrine-parent</artifactId>
+    <groupId>com.huawei.cloudviews</groupId>
+    <artifactId>cloudviews-parent</artifactId>
     <version>0.4-SNAPSHOT</version>
     <relativePath>../pom.xml</relativePath>
   </parent>
 
-  <groupId>com.microsoft.peregrine</groupId>
-  <artifactId>peregrine-spark</artifactId>
+  <groupId>com.huawei.cloudviews</groupId>
+  <artifactId>cloudviews-spark</artifactId>
   <packaging>jar</packaging>
-  <name>Peregrine Spark</name>
+  <name>cloudviews Spark</name>
 
   <dependencies>
 
     <dependency>
-      <groupId>com.microsoft.peregrine</groupId>
-      <artifactId>peregrine-core</artifactId>
+      <groupId>com.huawei.cloudviews</groupId>
+      <artifactId>cloudviews-core</artifactId>
       <version>0.4-SNAPSHOT</version>
     </dependency>
 
@@ -73,7 +73,7 @@
           <archive>
             <manifest>
               <addClasspath>true</addClasspath>
-              <mainClass>com.microsoft.peregrine.spark.utils.SparkTaskRunner</mainClass>
+              <mainClass>com.huawei.cloudviews.spark.utils.SparkTaskRunner</mainClass>
               <classpathPrefix>dependency-jars/</classpathPrefix>
             </manifest>
           </archive>
@@ -86,8 +86,8 @@
         <directory>${project.basedir}/apps/sparkcruise/bash/</directory>
         <targetPath>${project.build.directory}</targetPath>
         <includes>
-          <include>peregrine.sh</include>
-          <include>peregrine-spark.properties</include>
+          <include>cloudviews.sh</include>
+          <include>cloudviews-spark.properties</include>
           <include>Readme_for_HDInsight.md</include>
         </includes>
       </resource>

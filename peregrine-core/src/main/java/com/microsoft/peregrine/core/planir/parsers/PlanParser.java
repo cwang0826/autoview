@@ -1,7 +1,7 @@
-package com.microsoft.peregrine.core.planir.parsers;
+package com.huawei.cloudviews.core.planir.parsers;
 
-import com.microsoft.peregrine.core.planir.parsers.entities.Operator;
-import com.microsoft.peregrine.core.planir.parsers.entities.Plan;
+import com.huawei.cloudviews.core.planir.parsers.entities.Operator;
+import com.huawei.cloudviews.core.planir.parsers.entities.Plan;
 
 public abstract class PlanParser<Input> implements IParser<Input, Plan> {
   protected void getOpTree(String[] lines, int idx, int indent, Operator root) {

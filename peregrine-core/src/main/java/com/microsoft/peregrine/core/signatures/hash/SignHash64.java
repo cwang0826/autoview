@@ -1,4 +1,4 @@
-package com.microsoft.peregrine.core.signatures.hash;
+package com.huawei.cloudviews.core.signatures.hash;
 
 public class SignHash64 {
   public static String Compute(String base, String pString, long uSeed) {

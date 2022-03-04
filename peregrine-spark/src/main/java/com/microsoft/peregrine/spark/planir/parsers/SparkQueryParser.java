@@ -1,12 +1,12 @@
-package com.microsoft.peregrine.spark.planir.parsers;
+package com.huawei.cloudviews.spark.planir.parsers;
 
-import com.microsoft.peregrine.core.planir.parsers.PlanParser;
-import com.microsoft.peregrine.core.planir.parsers.QueryParser;
-import com.microsoft.peregrine.core.planir.parsers.entities.Metric;
-import com.microsoft.peregrine.core.planir.parsers.entities.Operator;
-import com.microsoft.peregrine.core.planir.parsers.entities.Plan;
-import com.microsoft.peregrine.core.planir.parsers.entities.Query;
-import com.microsoft.peregrine.spark.planir.parsers.entities.SparkMetric;
+import com.huawei.cloudviews.core.planir.parsers.PlanParser;
+import com.huawei.cloudviews.core.planir.parsers.QueryParser;
+import com.huawei.cloudviews.core.planir.parsers.entities.Metric;
+import com.huawei.cloudviews.core.planir.parsers.entities.Operator;
+import com.huawei.cloudviews.core.planir.parsers.entities.Plan;
+import com.huawei.cloudviews.core.planir.parsers.entities.Query;
+import com.huawei.cloudviews.spark.planir.parsers.entities.SparkMetric;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.ListIterator;
@@ -97,7 +97,7 @@ public class SparkQueryParser extends QueryParser<JSONObject> {
       String jsonString;
       List<LogicalNodeAnnotations> annotations;
       switch (tokens[i].trim()) {
-        case "Peregrine Signature":
+        case "cloudviews Signature":
           jsonString = tokens[++i].trim();
           annotations = extractAnnotationsFromJson(jsonString);
           return annotations;

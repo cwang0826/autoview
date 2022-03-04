@@ -1,7 +1,7 @@
-package com.microsoft.peregrine.core.signatures;
+package com.huawei.cloudviews.core.signatures;
 
-import com.microsoft.peregrine.core.planir.parsers.entities.Operator;
-import com.microsoft.peregrine.core.signatures.hash.SignHash64;
+import com.huawei.cloudviews.core.planir.parsers.entities.Operator;
+import com.huawei.cloudviews.core.signatures.hash.SignHash64;
 
 public abstract class OperatorSignature implements Signature<Operator> {
   private static OperatorSignature _hts;

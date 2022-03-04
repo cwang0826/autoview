@@ -1,6 +1,6 @@
-package com.microsoft.peregrine.core.feedback;
+package com.huawei.cloudviews.core.feedback;
 
-import com.microsoft.peregrine.core.feedback.annotations.Annotation;
+import com.huawei.cloudviews.core.feedback.annotations.Annotation;
 import java.io.InputStream;
 import java.io.OutputStream;
 import java.util.List;

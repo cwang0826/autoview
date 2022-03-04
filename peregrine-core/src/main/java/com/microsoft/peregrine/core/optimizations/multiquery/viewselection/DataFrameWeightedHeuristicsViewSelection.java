@@ -1,8 +1,8 @@
-package com.microsoft.peregrine.core.optimizations.multiquery.viewselection;
+package com.huawei.cloudviews.core.optimizations.multiquery.viewselection;
 
-import com.microsoft.peregrine.core.config.legacy.Config;
-import com.microsoft.peregrine.core.planir.preprocess.data.ir.DataFrameIR;
-import com.microsoft.peregrine.core.planir.preprocess.data.ir.IR;
+import com.huawei.cloudviews.core.config.legacy.Config;
+import com.huawei.cloudviews.core.planir.preprocess.data.ir.DataFrameIR;
+import com.huawei.cloudviews.core.planir.preprocess.data.ir.IR;
 import java.util.ArrayList;
 import java.util.List;
 import org.apache.commons.lang3.tuple.ImmutablePair;

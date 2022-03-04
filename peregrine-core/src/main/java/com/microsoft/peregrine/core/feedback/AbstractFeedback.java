@@ -1,4 +1,4 @@
-package com.microsoft.peregrine.core.feedback;
+package com.huawei.cloudviews.core.feedback;
 
 public abstract class AbstractFeedback implements IFeedback {
   public static IFeedback getInstance(String feedbackType) {

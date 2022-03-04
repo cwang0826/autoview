@@ -1,4 +1,4 @@
-package com.microsoft.peregrine.core.signatures.hash;
+package com.huawei.cloudviews.core.signatures.hash;
 
 import java.nio.charset.Charset;
 

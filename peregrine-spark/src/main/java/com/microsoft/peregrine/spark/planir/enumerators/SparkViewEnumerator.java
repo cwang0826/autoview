@@ -1,11 +1,11 @@
-package com.microsoft.peregrine.spark.planir.enumerators;
+package com.huawei.cloudviews.spark.planir.enumerators;
 
-import com.microsoft.peregrine.core.planir.parsers.entities.Operator;
-import com.microsoft.peregrine.core.planir.parsers.entities.Workload;
-import com.microsoft.peregrine.core.planir.preprocess.enumerators.ViewEnumerator;
-import com.microsoft.peregrine.spark.planir.parsers.metricflow.RowCountFlow;
-import com.microsoft.peregrine.spark.planir.parsers.metricflow.SerialTimeCalculator;
-import com.microsoft.peregrine.spark.planir.parsers.metricflow.StageTimeDistributor;
+import com.huawei.cloudviews.core.planir.parsers.entities.Operator;
+import com.huawei.cloudviews.core.planir.parsers.entities.Workload;
+import com.huawei.cloudviews.core.planir.preprocess.enumerators.ViewEnumerator;
+import com.huawei.cloudviews.spark.planir.parsers.metricflow.RowCountFlow;
+import com.huawei.cloudviews.spark.planir.parsers.metricflow.SerialTimeCalculator;
+import com.huawei.cloudviews.spark.planir.parsers.metricflow.StageTimeDistributor;
 
 public class SparkViewEnumerator extends ViewEnumerator {
   public SparkViewEnumerator(Workload workload) {

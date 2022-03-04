@@ -1,6 +1,6 @@
-package com.microsoft.peregrine.core.config;
+package com.huawei.cloudviews.core.config;
 
-import com.microsoft.peregrine.core.config.legacy.Config;
+import com.huawei.cloudviews.core.config.legacy.Config;
 import java.io.File;
 import java.nio.file.Files;
 import java.util.HashSet;

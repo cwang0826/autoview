@@ -1,12 +1,12 @@
-package com.microsoft.peregrine.spark.extensions;
+package com.huawei.cloudviews.spark.extensions;
 
-import com.microsoft.peregrine.core.config.legacy.Config;
-import com.microsoft.peregrine.core.config.legacy.PropertyConfig;
-import com.microsoft.peregrine.core.connectors.spark.SparkSQL;
-import com.microsoft.peregrine.core.utils.FSUtils;
-import com.microsoft.peregrine.spark.extensions.rules.AbstractRule;
-import com.microsoft.peregrine.spark.extensions.rules.ComputationReuse;
-import com.microsoft.peregrine.spark.extensions.rules.OnlineMaterialization;
+import com.huawei.cloudviews.core.config.legacy.Config;
+import com.huawei.cloudviews.core.config.legacy.PropertyConfig;
+import com.huawei.cloudviews.core.connectors.spark.SparkSQL;
+import com.huawei.cloudviews.core.utils.FSUtils;
+import com.huawei.cloudviews.spark.extensions.rules.AbstractRule;
+import com.huawei.cloudviews.spark.extensions.rules.ComputationReuse;
+import com.huawei.cloudviews.spark.extensions.rules.OnlineMaterialization;
 import java.io.File;
 import java.io.IOException;
 import java.nio.file.Files;
@@ -66,6 +66,6 @@ public class SparkExtensions extends AbstractFunction1<SparkSessionExtensions, B
   }
   
   protected Config getConf() {
-    return PropertyConfig.getInstance("peregrine-spark.properties");
+    return PropertyConfig.getInstance("cloudviews-spark.properties");
   }
 }

@@ -1,4 +1,4 @@
-package com.microsoft.peregrine.core.feedback.annotations;
+package com.huawei.cloudviews.core.feedback.annotations;
 
 public class MaterializeAnnotation extends Annotation {
   public MaterializeAnnotation(String recurringSignature, String payload) {

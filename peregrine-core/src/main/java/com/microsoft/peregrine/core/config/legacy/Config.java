@@ -1,4 +1,4 @@
-package com.microsoft.peregrine.core.config.legacy;
+package com.huawei.cloudviews.core.config.legacy;
 
 public interface Config {
   String get(String paramString);

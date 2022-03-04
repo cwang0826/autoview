@@ -1,7 +1,7 @@
-package com.microsoft.peregrine.spark.planir.parsers;
+package com.huawei.cloudviews.spark.planir.parsers;
 
-import com.microsoft.peregrine.core.config.legacy.Config;
-import com.microsoft.peregrine.core.planir.parsers.entities.Workload;
+import com.huawei.cloudviews.core.config.legacy.Config;
+import com.huawei.cloudviews.core.planir.parsers.entities.Workload;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 

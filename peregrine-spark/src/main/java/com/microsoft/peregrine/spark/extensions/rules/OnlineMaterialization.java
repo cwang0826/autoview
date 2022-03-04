@@ -1,11 +1,11 @@
-package com.microsoft.peregrine.spark.extensions.rules;
+package com.huawei.cloudviews.spark.extensions.rules;
 
-import com.microsoft.peregrine.core.connectors.spark.SparkSQL;
-import com.microsoft.peregrine.core.feedback.annotations.Annotation;
-import com.microsoft.peregrine.core.feedback.annotations.AnnotationAction;
-import com.microsoft.peregrine.core.feedback.annotations.AnnotationType;
-import com.microsoft.peregrine.core.utils.FSUtils;
-import com.microsoft.peregrine.spark.signature.LogicalPlanSignature;
+import com.huawei.cloudviews.core.connectors.spark.SparkSQL;
+import com.huawei.cloudviews.core.feedback.annotations.Annotation;
+import com.huawei.cloudviews.core.feedback.annotations.AnnotationAction;
+import com.huawei.cloudviews.core.feedback.annotations.AnnotationType;
+import com.huawei.cloudviews.core.utils.FSUtils;
+import com.huawei.cloudviews.spark.signature.LogicalPlanSignature;
 import org.apache.spark.sql.Dataset;
 import org.apache.spark.sql.Row;
 import org.apache.spark.sql.SparkSession;
@@ -52,7 +52,7 @@ public class OnlineMaterialization extends AbstractRule {
         return true;
       } 
     } catch (Exception e) {
-      logger.error("[PeregrineRule] Exception in checking materialization rule ", e);
+      logger.error("[cloudviewsRule] Exception in checking materialization rule ", e);
     } 
     return false;
   }
@@ -70,9 +70,9 @@ public class OnlineMaterialization extends AbstractRule {
       sanitizedDataset.write().format(this.materializeFormat).save(this.materializePathString);
       FSUtils.delete(this.lockPathString);
     } catch (Exception e) {
-      logger.error("[PeregrineRule] Exception in materialization on HTS: {} , HT: {}.", LogicalPlanSignature.HTS(p), LogicalPlanSignature.HT(p));
-      logger.error("[PeregrineRule] Exception in materialization of output columns {}.", p.output());
-      logger.error("[PeregrineRule] Exception in materialization ", e);
+      logger.error("[cloudviewsRule] Exception in materialization on HTS: {} , HT: {}.", LogicalPlanSignature.HTS(p), LogicalPlanSignature.HT(p));
+      logger.error("[cloudviewsRule] Exception in materialization of output columns {}.", p.output());
+      logger.error("[cloudviewsRule] Exception in materialization ", e);
     } 
     return p;
   }

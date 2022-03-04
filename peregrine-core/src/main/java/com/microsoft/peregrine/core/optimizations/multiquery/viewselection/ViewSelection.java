@@ -1,11 +1,11 @@
-package com.microsoft.peregrine.core.optimizations.multiquery.viewselection;
+package com.huawei.cloudviews.core.optimizations.multiquery.viewselection;
 
-import com.microsoft.peregrine.core.config.legacy.Config;
-import com.microsoft.peregrine.core.feedback.annotations.Annotation;
-import com.microsoft.peregrine.core.feedback.annotations.MaterializeAnnotation;
-import com.microsoft.peregrine.core.feedback.annotations.ReuseAnnotation;
-import com.microsoft.peregrine.core.optimizations.IOptimization;
-import com.microsoft.peregrine.core.planir.preprocess.data.ir.IR;
+import com.huawei.cloudviews.core.config.legacy.Config;
+import com.huawei.cloudviews.core.feedback.annotations.Annotation;
+import com.huawei.cloudviews.core.feedback.annotations.MaterializeAnnotation;
+import com.huawei.cloudviews.core.feedback.annotations.ReuseAnnotation;
+import com.huawei.cloudviews.core.optimizations.IOptimization;
+import com.huawei.cloudviews.core.planir.preprocess.data.ir.IR;
 import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.List;

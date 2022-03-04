@@ -1,9 +1,9 @@
-package com.microsoft.peregrine.spark.planir.enumerators;
+package com.huawei.cloudviews.spark.planir.enumerators;
 
 import com.google.common.collect.HashMultimap;
 import com.google.common.collect.Multimap;
-import com.microsoft.peregrine.core.planir.preprocess.entities.View;
-import com.microsoft.peregrine.core.planir.preprocess.enumerators.MetricAttributeAssociation;
+import com.huawei.cloudviews.core.planir.preprocess.entities.View;
+import com.huawei.cloudviews.core.planir.preprocess.enumerators.MetricAttributeAssociation;
 import java.util.HashSet;
 import java.util.Set;
 

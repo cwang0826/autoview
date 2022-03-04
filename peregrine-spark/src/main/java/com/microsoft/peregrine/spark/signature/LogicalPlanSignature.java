@@ -1,7 +1,7 @@
-package com.microsoft.peregrine.spark.signature;
+package com.huawei.cloudviews.spark.signature;
 
-import com.microsoft.peregrine.core.signatures.Signature;
-import com.microsoft.peregrine.core.signatures.hash.SignHash64;
+import com.huawei.cloudviews.core.signatures.Signature;
+import com.huawei.cloudviews.core.signatures.hash.SignHash64;
 import java.util.Iterator;
 import java.util.List;
 import org.apache.spark.sql.catalyst.catalog.CatalogTable;

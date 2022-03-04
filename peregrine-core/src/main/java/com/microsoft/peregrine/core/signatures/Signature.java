@@ -1,4 +1,4 @@
-package com.microsoft.peregrine.core.signatures;
+package com.huawei.cloudviews.core.signatures;
 
 public interface Signature<E> {
   String getSignature(E paramE);

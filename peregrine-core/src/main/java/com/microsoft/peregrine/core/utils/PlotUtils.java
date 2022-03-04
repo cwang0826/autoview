@@ -1,6 +1,6 @@
-package com.microsoft.peregrine.core.utils;
+package com.huawei.cloudviews.core.utils;
 
-import com.microsoft.peregrine.core.planir.preprocess.data.ir.DataFrameIR;
+import com.huawei.cloudviews.core.planir.preprocess.data.ir.DataFrameIR;
 
 public class PlotUtils {
   public void writeSubexpressionAnalysis(DataFrameIR input) {

@@ -1,6 +1,6 @@
-package com.microsoft.peregrine.spark.utils;
+package com.huawei.cloudviews.spark.utils;
 
-import com.microsoft.peregrine.spark.planir.parsers.entities.SparkOpJson;
+import com.huawei.cloudviews.spark.planir.parsers.entities.SparkOpJson;
 import java.util.List;
 import java.util.Stack;
 

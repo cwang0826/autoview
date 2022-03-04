@@ -1,5 +1,5 @@
-package com.microsoft.peregrine.core.planir.parsers;
+package com.huawei.cloudviews.core.planir.parsers;
 
-import com.microsoft.peregrine.core.planir.parsers.entities.Application;
+import com.huawei.cloudviews.core.planir.parsers.entities.Application;
 
 public abstract class ApplicationParser extends FileParser<Application> {}

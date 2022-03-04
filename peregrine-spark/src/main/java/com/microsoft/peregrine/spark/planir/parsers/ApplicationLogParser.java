@@ -1,9 +1,9 @@
-package com.microsoft.peregrine.spark.planir.parsers;
+package com.huawei.cloudviews.spark.planir.parsers;
 
-import com.microsoft.peregrine.core.planir.parsers.ApplicationParser;
-import com.microsoft.peregrine.core.planir.parsers.entities.Application;
-import com.microsoft.peregrine.core.planir.parsers.entities.Query;
-import com.microsoft.peregrine.spark.planir.parsers.entities.SparkAccumulable;
+import com.huawei.cloudviews.core.planir.parsers.ApplicationParser;
+import com.huawei.cloudviews.core.planir.parsers.entities.Application;
+import com.huawei.cloudviews.core.planir.parsers.entities.Query;
+import com.huawei.cloudviews.spark.planir.parsers.entities.SparkAccumulable;
 import java.io.BufferedReader;
 import java.util.HashMap;
 import java.util.Map;
@@ -76,8 +76,8 @@ public class ApplicationLogParser extends ApplicationParser {
           queryEndId = ((Long)json.get("executionId")).longValue();
           (this.application.metadata.getQueryMetadata(queryEndId)).QueryEndTime = ((Long)json.get("time")).longValue();
           break;
-        case "com.microsoft.peregrine.spark.listeners.PlanLogEvent":
-        case "com.microsoft.peregrine.spark.extensions.listeners.PlanLogEvent":
+        case "com.huawei.cloudviews.spark.listeners.PlanLogEvent":
+        case "com.huawei.cloudviews.spark.extensions.listeners.PlanLogEvent":
           q = this.queryParser.parse(json);
           if (q != null)
             this.application.addQuery(q); 

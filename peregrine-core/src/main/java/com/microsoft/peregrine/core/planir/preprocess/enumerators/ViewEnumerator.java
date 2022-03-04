@@ -1,13 +1,13 @@
-package com.microsoft.peregrine.core.planir.preprocess.enumerators;
+package com.huawei.cloudviews.core.planir.preprocess.enumerators;
 
-import com.microsoft.peregrine.core.planir.parsers.entities.Application;
-import com.microsoft.peregrine.core.planir.parsers.entities.Metadata;
-import com.microsoft.peregrine.core.planir.parsers.entities.Metric;
-import com.microsoft.peregrine.core.planir.parsers.entities.Operator;
-import com.microsoft.peregrine.core.planir.parsers.entities.Query;
-import com.microsoft.peregrine.core.planir.parsers.entities.QueryMetadata;
-import com.microsoft.peregrine.core.planir.parsers.entities.Workload;
-import com.microsoft.peregrine.core.planir.preprocess.entities.View;
+import com.huawei.cloudviews.core.planir.parsers.entities.Application;
+import com.huawei.cloudviews.core.planir.parsers.entities.Metadata;
+import com.huawei.cloudviews.core.planir.parsers.entities.Metric;
+import com.huawei.cloudviews.core.planir.parsers.entities.Operator;
+import com.huawei.cloudviews.core.planir.parsers.entities.Query;
+import com.huawei.cloudviews.core.planir.parsers.entities.QueryMetadata;
+import com.huawei.cloudviews.core.planir.parsers.entities.Workload;
+import com.huawei.cloudviews.core.planir.preprocess.entities.View;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;

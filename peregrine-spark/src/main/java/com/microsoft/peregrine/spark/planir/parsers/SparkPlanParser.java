@@ -1,9 +1,9 @@
-package com.microsoft.peregrine.spark.planir.parsers;
+package com.huawei.cloudviews.spark.planir.parsers;
 
-import com.microsoft.peregrine.core.planir.parsers.PlanParser;
-import com.microsoft.peregrine.core.planir.parsers.entities.Operator;
-import com.microsoft.peregrine.core.planir.parsers.entities.Plan;
-import com.microsoft.peregrine.spark.planir.parsers.entities.SparkOp;
+import com.huawei.cloudviews.core.planir.parsers.PlanParser;
+import com.huawei.cloudviews.core.planir.parsers.entities.Operator;
+import com.huawei.cloudviews.core.planir.parsers.entities.Plan;
+import com.huawei.cloudviews.spark.planir.parsers.entities.SparkOp;
 
 public class SparkPlanParser extends PlanParser<String> {
   public Plan parse(String planString) {

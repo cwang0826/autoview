@@ -1,10 +1,10 @@
-package com.microsoft.peregrine.spark.planir.parsers;
+package com.huawei.cloudviews.spark.planir.parsers;
 
-import com.microsoft.peregrine.core.planir.parsers.PlanParser;
-import com.microsoft.peregrine.core.planir.parsers.entities.Operator;
-import com.microsoft.peregrine.core.planir.parsers.entities.Plan;
-import com.microsoft.peregrine.spark.planir.parsers.entities.SparkOpJson;
-import com.microsoft.peregrine.spark.utils.SparkTreeUtils;
+import com.huawei.cloudviews.core.planir.parsers.PlanParser;
+import com.huawei.cloudviews.core.planir.parsers.entities.Operator;
+import com.huawei.cloudviews.core.planir.parsers.entities.Plan;
+import com.huawei.cloudviews.spark.planir.parsers.entities.SparkOpJson;
+import com.huawei.cloudviews.spark.utils.SparkTreeUtils;
 import java.util.ArrayList;
 import java.util.List;
 import org.json.simple.JSONArray;

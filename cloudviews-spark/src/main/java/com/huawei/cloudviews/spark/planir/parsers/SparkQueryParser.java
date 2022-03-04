@@ -97,7 +97,7 @@ public class SparkQueryParser extends QueryParser<JSONObject> {
       String jsonString;
       List<LogicalNodeAnnotations> annotations;
       switch (tokens[i].trim()) {
-        case "cloudviews Signature":
+        case "Cloudviews Signature":
           jsonString = tokens[++i].trim();
           annotations = extractAnnotationsFromJson(jsonString);
           return annotations;

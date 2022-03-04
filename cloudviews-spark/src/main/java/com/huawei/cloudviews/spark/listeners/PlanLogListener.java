@@ -48,7 +48,7 @@ public class PlanLogListener implements QueryExecutionListener {
   
   protected void postPlans(String planDescription, QueryExecution qe, long startTime, long planLogId) {
     SparkContext sc = qe.sparkSession().sparkContext();
-    PlanLogEvent startEvent = new PlanLogEvent(planLogId, "cloudviewsPlanLogEvent", "Spark SQL Plans with annotations.", planDescription, SparkPlanInfo.fromSparkPlan(qe.executedPlan()), startTime);
+    PlanLogEvent startEvent = new PlanLogEvent(planLogId, "CloudviewsPlanLogEvent", "Spark SQL Plans with annotations.", planDescription, SparkPlanInfo.fromSparkPlan(qe.executedPlan()), startTime);
     sc.listenerBus().post((SparkListenerEvent)startEvent);
     SparkListenerSQLExecutionEnd endEvent = new SparkListenerSQLExecutionEnd(planLogId, System.currentTimeMillis());
     sc.listenerBus().post((SparkListenerEvent)endEvent);
@@ -80,7 +80,7 @@ public class PlanLogListener implements QueryExecutionListener {
     try {
       sb.append("== Optimized Logical Plan ==");
       sb.append(qe.optimizedPlan().prettyJson());
-      sb.append("== cloudviews Signature ==");
+      sb.append("== Cloudviews Signature ==");
       List<String> signatures = getSignatures(qe.optimizedPlan());
       SparkContext context = qe.sparkSession().sparkContext();
       List<CardinalityFeatures> cardinalityFeatures = new ArrayList<>();

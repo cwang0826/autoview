@@ -1,18 +1,18 @@
 #!/bin/bash
 
-# Peregrine helper script
+# Cloudviews helper script
 usage()
 {
-  echo "usage: peregrine.sh [[analyze] | [views] | [show] | [clean] | [help]]"
+  echo "usage: cloudviews.sh [[analyze] | [views] | [show] | [clean] | [help]]"
 }
 
 # log level
 #set -o xtrace
 
 VERSION="0.4-SNAPSHOT"
-WORK_DIR="/opt/peregrine/analyze"
-IR_NAME=`(grep "IR_filename" ${WORK_DIR}/peregrine-spark.properties | cut -f2 -d'=')`
-MAT_DIR=`(grep "ComputeReuse_materializePath" ${WORK_DIR}/peregrine-spark.properties | cut -f2 -d'=')`
+WORK_DIR="/opt/cloudviews/analyze"
+IR_NAME=`(grep "IR_filename" ${WORK_DIR}/cloudviews-spark.properties | cut -f2 -d'=')`
+MAT_DIR=`(grep "ComputeReuse_materializePath" ${WORK_DIR}/cloudviews-spark.properties | cut -f2 -d'=')`
 STATUS=0
 
 run_command()
@@ -35,7 +35,7 @@ clean()
   #hadoop fs -rmr /hdp/spark2-events/*
 }
 
-# list peregrine outputs
+# list cloudviews outputs
 show()
 {
   echo -e "\nFeedback file -->\n"
@@ -65,9 +65,9 @@ parse_logical()
 {
   command="java \
   -Xmx8g \
-  -jar ${WORK_DIR}/peregrine-spark-${VERSION}.jar \
+  -jar ${WORK_DIR}/cloudviews-spark-${VERSION}.jar \
     SparkLogicalWorkloadParserTask \
-    ${WORK_DIR}/peregrine-spark.properties
+    ${WORK_DIR}/cloudviews-spark.properties
   "
   run_command $command
   mv ${IR_NAME} ${WORK_DIR}/logical_ir.csv
@@ -79,9 +79,9 @@ parse_physical()
 {
   command="java \
   -Xmx8g \
-  -jar ${WORK_DIR}/peregrine-spark-${VERSION}.jar \
+  -jar ${WORK_DIR}/cloudviews-spark-${VERSION}.jar \
     SparkWorkloadParserTask \
-    ${WORK_DIR}/peregrine-spark.properties
+    ${WORK_DIR}/cloudviews-spark.properties
   "
   run_command $command
   mv ${IR_NAME} ${WORK_DIR}/physical_ir.csv
@@ -94,17 +94,17 @@ views()
 {
   command="java \
   -Xmx8g \
-  -jar ${WORK_DIR}/peregrine-spark-${VERSION}.jar \
+  -jar ${WORK_DIR}/cloudviews-spark-${VERSION}.jar \
     ViewSelectionTask \
-    ${WORK_DIR}/peregrine-spark.properties \
+    ${WORK_DIR}/cloudviews-spark.properties \
     ${WORK_DIR}/physical_ir.csv
   "
   run_command $command
-  VIEW_FROM=`(grep "ComputeReuse_feedbackPath" ${WORK_DIR}/peregrine-spark.properties | cut -f2 -d'=')`
-  VIEW_TO=`(grep "FeedbackParams" ${WORK_DIR}/peregrine-spark.properties | cut -f2 -d'=')`
+  VIEW_FROM=`(grep "ComputeReuse_feedbackPath" ${WORK_DIR}/cloudviews-spark.properties | cut -f2 -d'=')`
+  VIEW_TO=`(grep "FeedbackParams" ${WORK_DIR}/cloudviews-spark.properties | cut -f2 -d'=')`
   copy_command="hadoop fs -copyFromLocal -f ${VIEW_FROM} ${VIEW_TO}"
   run_command $copy_command
-  VIEW_IR=`(grep "View_Selection_IR" ${WORK_DIR}/peregrine-spark.properties | cut -f2 -d'=')`
+  VIEW_IR=`(grep "View_Selection_IR" ${WORK_DIR}/cloudviews-spark.properties | cut -f2 -d'=')`
   copy_command="hadoop fs -copyFromLocal -f ${VIEW_IR} ${MAT_DIR}/"
   run_command $copy_command
   rm -rf spark-warehouse

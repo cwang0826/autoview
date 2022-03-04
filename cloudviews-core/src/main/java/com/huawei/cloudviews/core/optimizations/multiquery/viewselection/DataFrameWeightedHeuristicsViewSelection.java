@@ -25,7 +25,7 @@ public class DataFrameWeightedHeuristicsViewSelection extends HeuristicsViewSele
   
   public DataFrameIR filterSpecificOperators(DataFrameIR inputViews) {
     int estimatedRowLength = 100;
-    DataFrameIR viewIR = new DataFrameIR(inputViews, "SELECT *    FROM " + inputViews.getName() + "\n   WHERE (LogicalName LIKE 'Aggregate'\n   OR LogicalName LIKE 'Filter'\n   OR LogicalName LIKE 'GlobalLimit'\n   OR LogicalName LIKE 'Join'\n   OR LogicalName LIKE 'Project'\n   OR LogicalName LIKE 'Sort'\n   OR LogicalName LIKE 'Union') \n   AND ChildCount > 0\n   AND (cast(PRowCount AS BIGINT)*" + 'd' + "/cast(cast(1024.0 AS BIGINT)*cast(1024.0 AS BIGINT) AS BIGINT)) < " + this.maxSizeInMb + "\n   AND NOT (LogicalName LIKE 'Project' AND Parameters LIKE '%projectList%[],%')", inputViews.getName() + "_initial_filter");
+    DataFrameIR viewIR = new DataFrameIR(inputViews, "SELECT *    FROM " + inputViews.getName() + "\n   WHERE (LogicalName LIKE 'Aggregate'\n   OR LogicalName LIKE 'Filter'\n   OR LogicalName LIKE 'GlobalLimit'\n   OR LogicalName LIKE 'Join'\n   OR LogicalName LIKE 'Project'\n   OR LogicalName LIKE 'Sort'\n   OR LogicalName LIKE 'Union') \n   AND ChildCount > 0\n   AND (cast(PRowCount AS BIGINT)*" + estimatedRowLength + "/cast(cast(1024.0 AS BIGINT)*cast(1024.0 AS BIGINT) AS BIGINT)) < " + this.maxSizeInMb + "\n   AND NOT (LogicalName LIKE 'Project' AND Parameters LIKE '%projectList%[],%')", inputViews.getName() + "_initial_filter");
     viewIR.persist();
     viewIR.show();
     return viewIR;
